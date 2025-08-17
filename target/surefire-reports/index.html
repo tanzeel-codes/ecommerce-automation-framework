@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-TestsSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestsSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginTest(selenium@gmail.com, selenium)">loginTest(selenium@gmail.com, selenium)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestsSuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="login(selenium@gmail.com, akhtar)">login(selenium@gmail.com, akhtar)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestsSuite" title="tests.SearchTest" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestsSuite -->
@@ -121,15 +126,30 @@
           <div class="suite-TestsSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">tests.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestsSuite-class-passed -->
+          <div class="suite-TestsSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(selenium@gmail.com, selenium)">
-                  </a> <!-- loginTest(selenium@gmail.com, selenium) -->
-                  <span class="method-name">loginTest</span>
-                  <span class="parameters">(selenium@gmail.com,selenium)</span>
+                  <a name="login(selenium@gmail.com, akhtar)">
+                  </a> <!-- login(selenium@gmail.com, akhtar) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(selenium@gmail.com,akhtar)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,11 +164,15 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestsSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Listeners.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Tests&quot; verbose=&quot;0&quot;&gt;
-    &lt;parameter name=&quot;pass&quot; value=&quot;selenium&quot;/&gt;
+    &lt;parameter name=&quot;pass&quot; value=&quot;akhtar&quot;/&gt;
     &lt;parameter name=&quot;user&quot; value=&quot;selenium@gmail.com&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.SearchTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Tests --&gt;
 &lt;/suite&gt; &lt;!-- TestsSuite --&gt;
@@ -162,7 +186,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Tests (1 class)</span>
+                <span class="test-name">Tests (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,16 +212,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
+data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 3994);
+data.setCell(0, 3, 1740);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'search')
+data.setCell(1, 2, 'tests.SearchTest')
+data.setCell(1, 3, 841);
 window.suiteTableData['TestsSuite']= { tableData: data, tableDiv: 'times-div-TestsSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-TestsSuite">
               </div> <!-- times-div-TestsSuite -->
             </div> <!-- times-div -->
@@ -224,10 +252,28 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">loginTest(selenium@gmail.com, selenium)</span>
+              <div class="configuration-suite before">
+                <span class="method-name">openApplication</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">login(selenium@gmail.com, akhtar)</span>
+                <span class="method-start">7028 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">search</span>
+                <span class="method-start">8773 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">closure</span>
+                <span class="method-start">9640 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

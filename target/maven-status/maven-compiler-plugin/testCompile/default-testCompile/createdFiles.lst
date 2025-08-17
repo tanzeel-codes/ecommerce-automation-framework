@@ -1,2 +1,3 @@
 tests\LoginTest.class
-pageModels\LoginPage.class
+tests\SearchTest.class
+tests\VerificationTest.class

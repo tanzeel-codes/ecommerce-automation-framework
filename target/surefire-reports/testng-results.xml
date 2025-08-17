@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-14T21:23:27 IST" name="TestsSuite" finished-at="2025-08-14T21:23:31 IST" duration-ms="4036">
+  <suite started-at="2025-08-16T23:01:16 IST" name="TestsSuite" finished-at="2025-08-16T23:01:18 IST" duration-ms="2627">
     <groups>
     </groups>
-    <test started-at="2025-08-14T21:23:27 IST" name="Tests" finished-at="2025-08-14T21:23:31 IST" duration-ms="4036">
+    <test started-at="2025-08-16T23:01:16 IST" name="Tests" finished-at="2025-08-16T23:01:18 IST" duration-ms="2627">
       <class name="tests.LoginTest">
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@25d250c6]" started-at="2025-08-14T21:23:27 IST" name="loginTest" finished-at="2025-08-14T21:23:31 IST" duration-ms="3994" status="PASS">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:tests.LoginTest@ef9296d]" started-at="2025-08-16T23:01:09 IST" name="openApplication" finished-at="2025-08-16T23:01:16 IST" duration-ms="6985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@ef9296d]" started-at="2025-08-16T23:01:16 IST" name="login" finished-at="2025-08-16T23:01:17 IST" duration-ms="1740" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,14 +20,24 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[selenium]]>
+                <![CDATA[akhtar]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:tests.LoginTest@ef9296d]" started-at="2025-08-16T23:01:18 IST" name="closure" finished-at="2025-08-16T23:01:19 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
       </class> <!-- tests.LoginTest -->
+      <class name="tests.SearchTest">
+        <test-method signature="search()[pri:0, instance:tests.SearchTest@10e92f8f]" started-at="2025-08-16T23:01:17 IST" name="search" finished-at="2025-08-16T23:01:18 IST" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- tests.SearchTest -->
     </test> <!-- Tests -->
   </suite> <!-- TestsSuite -->
 </testng-results>

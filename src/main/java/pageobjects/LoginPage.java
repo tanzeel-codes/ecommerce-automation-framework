@@ -1,5 +1,7 @@
-package pageModels;
+package pageobjects;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -8,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
     WebDriver driver;
+    private final static Logger logs = LogManager.getLogger(LoginPage.class);
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -20,28 +23,28 @@ public class LoginPage {
     @FindBy(id = "input-password")
     private WebElement passwordField;
 
-    @FindBy(xpath = "//input[@class='btn btn-primary']")
+    @FindBy(xpath = "//input[@type='submit']")
     private WebElement loginField;
 
-    private LoginPage setEmail(String username) {
+    public LoginPage setEmail(String username) {
+        logs.info("Entering email:" + username);
         emailField.sendKeys(username);
         return this;
     }
 
-    private LoginPage setPassword(String password) {
+    public LoginPage setPassword(String password) {
+        logs.info("Entering password");
         passwordField.sendKeys(password);
         return this;
     }
 
-    private void clickLogin() {
+    public void clickLogin() {
         loginField.click();
     }
 
     public void login(String user, String pass) throws InterruptedException {
         Actions actions = new Actions(driver);
         actions.doubleClick(emailField).click().perform();
-        setEmail(user);
-        setPassword(pass);
-        clickLogin();
+        setEmail(user).setPassword(pass).clickLogin();
     }
 }

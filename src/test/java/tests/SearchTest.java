@@ -1,15 +1,25 @@
 package tests;
 
-import org.testng.annotations.Parameters;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageModels.SearchPage;
+import pageobjects.AccountPage;
+import pageobjects.ProductPage;
 import resources.Base;
 
 public class SearchTest extends Base {
+    private final Logger logs = LogManager.getLogger(this.getClass());
     @Test
-    @Parameters({"item"})
-    public void searchProd(String product) {
-        SearchPage searchPage = new SearchPage(driver);
-        searchPage.searchProduct(product);
+    public void search() {
+        LoginTest loginTest = new LoginTest();
+        AccountPage accountPage = new AccountPage(driver);
+        accountPage.hoverOverDeskTop().hoverOverMac().select();
+
+        ProductPage productPage = new ProductPage(driver);
+        productPage.getProduct("iMac");
+
+
+
     }
 }
