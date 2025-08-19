@@ -71,7 +71,7 @@
 
   <build>
     <resources>
-      <resource>
+      <resource>  <!-- For LOG4j2 to work-->
         <directory>src/main/java/resources</directory>
         <filtering>true</filtering>
       </resource>

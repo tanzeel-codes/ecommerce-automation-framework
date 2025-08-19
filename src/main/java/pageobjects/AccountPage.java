@@ -32,7 +32,7 @@ public class AccountPage {
     private WebElement mac;
 
     @FindBy(xpath = "//a[@class='see-all'][text()='Show All Desktops']")
-    WebElement showAllDesktopOption;
+    private WebElement showAllDesktopOption;
 
     public boolean editAccountOption() {
         logs.info("Verifying the Login status");

@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -11,6 +12,7 @@ import pageobjects.AccountPage;
 import pageobjects.LandingPage;
 import pageobjects.LoginPage;
 import resources.Base;
+import resources.DataProviders;
 
 public class LoginTest extends Base {
     private final static Logger logs = LogManager.getLogger(LoginTest.class);
@@ -20,7 +22,7 @@ public class LoginTest extends Base {
         driver.get(prop.getProperty("url"));
     }
 
-//    @Test(dataProvider = "getData")
+//    @Test(dataProvider = "userData", dataProviderClass = DataProviders.class)
     @Test
     @Parameters({"user", "pass"})
     public void login(String user, String pass) throws InterruptedException {
@@ -50,11 +52,4 @@ public class LoginTest extends Base {
         driver.quit();
         logs.info("Driver got closed");
     }
-
-//    @DataProvider
-//    public Object[][] getData() {
-//       Object[][] data = {{"selenium@gmail.com", "akhtar", "Success"},{"hello","passs","Failure"}};
-//       return data;
-//
-//    }
 }

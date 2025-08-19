@@ -20,35 +20,33 @@ public class ProductPage {
         PageFactory.initElements(driver, this);
     }
     @FindBy(id = "button-cart")
-    WebElement addToCartOption;
+    private WebElement addToCartOption;
 
     @FindBy(id = "cart-total")
-    WebElement totalCartOption;
+    private WebElement totalCartOption;
 
     @FindBy(xpath = "//p//i[@class='fa fa-shopping-cart']")
-    WebElement viewCartOption;
+    private WebElement viewCartOption;
 
     @FindBy(xpath = "//p//i[@class='fa fa-share']")
-    WebElement checkoutOption;
+    private WebElement checkoutOption;
 
     @FindBy(xpath = "//input[@class='form-control input-lg']")
-    WebElement searchField;
+    private WebElement searchField;
 
     @FindBy(id = "input-quantity")
-    WebElement quantityField;
-
-
+    private WebElement quantityField;
 
     // DYNAMICALLY GENERATE THE XPATH FOR THE MENTIONED PRODUCT
     public WebElement product(String productName) {
         logs.info("Getting the element locator");
-        String xPath = String.format("//img[@title='%s'][@class='img-responsive']", productName);
+        String xPath = String.format("//img[contains(@title,'%s')][@class='img-responsive']", productName);
+        logs.info("xPath Generated, Searching using the xPath");
         return driver.findElement(By.xpath(xPath));
     }
 
     // SEARCH PRODUCT BY GIVING NAME (MUST MATCH WITH PRODUCT)
     public void getProduct(String productName) {
-        logs.debug("xPath Generated, Searching using the xPath");
         product(productName).click();
         logs.info("Successfully navigate to the product" + productName);
     }
@@ -59,13 +57,15 @@ public class ProductPage {
         searchField.submit();
     }
 
+
+
     public void addToCart() {
         logs.info("Adding the product to cart");
         addToCartOption.click();
     }
 
     public void checkout() {
-        logs.info("Proceed on checkout");
+        logs.info("Proceed on checkout directly");
         checkoutOption.click();
     }
 
@@ -75,9 +75,8 @@ public class ProductPage {
     }
 
     public void setQuantity(String quantity) {
-        logs.info("Setting the quantity of product");
-        actions.doubleClick(quantityField).perform();
-        actions.sendKeys(quantityField, quantity).perform();
+        logs.info("Setting the quantity of product in product page");
+        actions.doubleClick(quantityField).sendKeys(quantity).perform();
     }
 
     public void viewTotalCart() {
