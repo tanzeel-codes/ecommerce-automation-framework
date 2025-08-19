@@ -2,14 +2,10 @@ package tests;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import pageobjects.CheckoutPage;
 import resources.Base;
 import resources.DataProviders;
-
-import java.time.Duration;
 
 public class CheckoutTest extends Base {
     private final static Logger logs = LogManager.getLogger(CheckoutTest.class);
