@@ -57,8 +57,6 @@ public class ProductPage {
         searchField.submit();
     }
 
-
-
     public void addToCart() {
         logs.info("Adding the product to cart");
         addToCartOption.click();

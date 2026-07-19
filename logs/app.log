@@ -2343,3 +2343,164 @@ java.lang.NoSuchFieldException: driver
 2025-08-19 22:29:53 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to payment
 2025-08-19 22:29:54 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Confirm Order
 2025-08-19 22:29:55 [main] INFO  tests.LoginTest - Driver got closed
+2025-08-19 22:32:33 [main] INFO  resources.Base - Driver successfully initiated
+2025-08-19 22:32:35 [main] INFO  tests.LoginTest - Starting Test LoginTest
+2025-08-19 22:32:35 [main] INFO  pageobjects.LandingPage - click on the account option
+2025-08-19 22:32:35 [main] INFO  pageobjects.LandingPage - click on the login option
+2025-08-19 22:32:35 [main] INFO  tests.LoginTest - Successfully navigated to login page
+2025-08-19 22:32:36 [main] INFO  pageobjects.LoginPage - Entering email:selenium@gmail.com
+2025-08-19 22:32:36 [main] INFO  pageobjects.LoginPage - Entering password
+2025-08-19 22:32:36 [main] INFO  pageobjects.AccountPage - Verifying the Login status
+2025-08-19 22:32:36 [main] INFO  tests.LoginTest - Successfully logged in
+2025-08-19 22:32:36 [main] INFO  tests.SearchTest - Starting the product search Test
+2025-08-19 22:32:36 [main] INFO  pageobjects.AccountPage - Hover over the desktop option
+2025-08-19 22:32:36 [main] INFO  pageobjects.AccountPage - Hover over the mac option
+2025-08-19 22:32:37 [main] INFO  pageobjects.ProductPage - Getting the element locator
+2025-08-19 22:32:37 [main] INFO  pageobjects.ProductPage - xPath Generated, Searching using the xPath
+2025-08-19 22:32:38 [main] INFO  pageobjects.ProductPage - Successfully navigate to the productMac
+2025-08-19 22:32:38 [main] INFO  pageobjects.ProductPage - Setting the quantity of product in product page
+2025-08-19 22:32:38 [main] INFO  pageobjects.ProductPage - Adding the product to cart
+2025-08-19 22:32:38 [main] INFO  pageobjects.ProductPage - Checking all the product in total Cart
+2025-08-19 22:32:38 [main] INFO  pageobjects.ProductPage - Reviewing Products in View Cart
+2025-08-19 22:32:39 [main] INFO  tests.CartTest - Starting the product cart Test
+2025-08-19 22:32:39 [main] INFO  tests.CartTest - In Cart Page
+2025-08-19 22:32:39 [main] INFO  pageobjects.CartPage - Setting up the quantity in cart page
+2025-08-19 22:32:39 [main] INFO  pageobjects.CartPage - Quantity has set for the product
+2025-08-19 22:32:39 [main] INFO  pageobjects.CartPage - Update the quantity on cart  page
+2025-08-19 22:32:39 [main] INFO  pageobjects.CartPage - Proceed to checkout
+2025-08-19 22:32:40 [TestNG-PoolService-1] INFO  tests.CheckoutTest - Starting the checkout Test
+2025-08-19 22:32:50 [TestNG-PoolService-1] ERROR pageobjects.CheckoutPage - No previous details exists
+2025-08-19 22:32:50 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set first name
+2025-08-19 22:32:50 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set last name
+2025-08-19 22:32:50 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set address1
+2025-08-19 22:32:50 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set address2
+2025-08-19 22:32:50 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set cityName
+2025-08-19 22:32:50 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set PostCode
+2025-08-19 22:32:50 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Selecting country
+2025-08-19 22:32:51 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Selecting region
+2025-08-19 22:32:55 [TestNG-PoolService-1] ERROR resources.Base - Error while taking screenshot
+2025-08-19 22:32:55 [TestNG-PoolService-1] INFO  Listeners.Listeners - Takes ScreenShot on Failure
+2025-08-19 22:32:55 [main] INFO  tests.LoginTest - Driver got closed
+2025-08-19 23:00:27 [main] INFO  resources.Base - Driver successfully initiated
+2025-08-19 23:00:30 [main] INFO  tests.LoginTest - Starting Test LoginTest
+2025-08-19 23:00:30 [main] INFO  pageobjects.LandingPage - click on the account option
+2025-08-19 23:00:30 [main] INFO  pageobjects.LandingPage - click on the login option
+2025-08-19 23:00:30 [main] INFO  tests.LoginTest - Successfully navigated to login page
+2025-08-19 23:00:30 [main] INFO  pageobjects.LoginPage - Entering email:selenium@gmail.com
+2025-08-19 23:00:31 [main] INFO  pageobjects.LoginPage - Entering password
+2025-08-19 23:00:31 [main] INFO  pageobjects.AccountPage - Verifying the Login status
+2025-08-19 23:00:31 [main] INFO  tests.LoginTest - Successfully logged in
+2025-08-19 23:00:31 [main] INFO  tests.SearchTest - Starting the product search Test
+2025-08-19 23:00:31 [main] INFO  pageobjects.AccountPage - Hover over the desktop option
+2025-08-19 23:00:31 [main] INFO  pageobjects.AccountPage - Hover over the mac option
+2025-08-19 23:00:32 [main] INFO  pageobjects.ProductPage - Getting the element locator
+2025-08-19 23:00:32 [main] INFO  pageobjects.ProductPage - xPath Generated, Searching using the xPath
+2025-08-19 23:00:33 [main] INFO  pageobjects.ProductPage - Successfully navigate to the productMac
+2025-08-19 23:00:33 [main] INFO  pageobjects.ProductPage - Setting the quantity of product in product page
+2025-08-19 23:00:33 [main] INFO  pageobjects.ProductPage - Adding the product to cart
+2025-08-19 23:00:33 [main] INFO  pageobjects.ProductPage - Checking all the product in total Cart
+2025-08-19 23:00:33 [main] INFO  pageobjects.ProductPage - Reviewing Products in View Cart
+2025-08-19 23:00:33 [main] INFO  tests.CartTest - Starting the product cart Test
+2025-08-19 23:00:33 [main] INFO  tests.CartTest - In Cart Page
+2025-08-19 23:00:33 [main] INFO  pageobjects.CartPage - Setting up the quantity in cart page
+2025-08-19 23:00:34 [main] INFO  pageobjects.CartPage - Quantity has set for the product
+2025-08-19 23:00:34 [main] INFO  pageobjects.CartPage - Update the quantity on cart  page
+2025-08-19 23:00:34 [main] INFO  pageobjects.CartPage - Proceed to checkout
+2025-08-19 23:00:35 [TestNG-PoolService-1] INFO  tests.CheckoutTest - Starting the checkout Test
+2025-08-19 23:00:35 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Creating new details
+2025-08-19 23:00:35 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set first name
+2025-08-19 23:00:35 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set last name
+2025-08-19 23:00:35 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set address1
+2025-08-19 23:00:35 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set address2
+2025-08-19 23:00:35 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set cityName
+2025-08-19 23:00:35 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set PostCode
+2025-08-19 23:00:35 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Selecting country
+2025-08-19 23:00:36 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Selecting region
+2025-08-19 23:00:36 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Delivery Detail
+2025-08-19 23:00:37 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Delivery Method
+2025-08-19 23:00:38 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Delivery Method has been mentioned
+2025-08-19 23:00:38 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to payment
+2025-08-19 23:00:39 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Confirm Order
+2025-08-19 23:00:39 [main] INFO  tests.LoginTest - Driver got closed
+2025-08-20 12:53:32 [main] INFO  resources.Base - Driver successfully initiated
+2025-08-20 12:53:35 [main] INFO  tests.LoginTest - Starting Test LoginTest
+2025-08-20 12:53:35 [main] INFO  pageobjects.LandingPage - click on the account option
+2025-08-20 12:53:35 [main] INFO  pageobjects.LandingPage - click on the login option
+2025-08-20 12:53:35 [main] INFO  tests.LoginTest - Successfully navigated to login page
+2025-08-20 12:53:36 [main] INFO  pageobjects.LoginPage - Entering email:selenium@gmail.com
+2025-08-20 12:53:36 [main] INFO  pageobjects.LoginPage - Entering password
+2025-08-20 12:53:36 [main] INFO  pageobjects.AccountPage - Verifying the Login status
+2025-08-20 12:53:37 [main] INFO  tests.LoginTest - Successfully logged in
+2025-08-20 12:53:37 [main] INFO  tests.SearchTest - Starting the product search Test
+2025-08-20 12:53:37 [main] INFO  pageobjects.AccountPage - Hover over the desktop option
+2025-08-20 12:53:37 [main] INFO  pageobjects.AccountPage - Hover over the mac option
+2025-08-20 12:53:37 [main] INFO  pageobjects.ProductPage - Getting the element locator
+2025-08-20 12:53:37 [main] INFO  pageobjects.ProductPage - xPath Generated, Searching using the xPath
+2025-08-20 12:53:38 [main] INFO  pageobjects.ProductPage - Successfully navigate to the productMac
+2025-08-20 12:53:38 [main] INFO  pageobjects.ProductPage - Setting the quantity of product in product page
+2025-08-20 12:53:38 [main] INFO  pageobjects.ProductPage - Adding the product to cart
+2025-08-20 12:53:38 [main] INFO  pageobjects.ProductPage - Checking all the product in total Cart
+2025-08-20 12:53:38 [main] INFO  pageobjects.ProductPage - Reviewing Products in View Cart
+2025-08-20 12:53:39 [main] INFO  tests.CartTest - Starting the product cart Test
+2025-08-20 12:53:39 [main] INFO  tests.CartTest - In Cart Page
+2025-08-20 12:53:39 [main] INFO  pageobjects.CartPage - Setting up the quantity in cart page
+2025-08-20 12:53:39 [main] INFO  pageobjects.CartPage - Quantity has set for the product
+2025-08-20 12:53:39 [main] INFO  pageobjects.CartPage - Update the quantity on cart  page
+2025-08-20 12:53:39 [main] INFO  pageobjects.CartPage - Proceed to checkout
+2025-08-20 12:53:40 [TestNG-PoolService-1] INFO  tests.CheckoutTest - Starting the checkout Test
+2025-08-20 12:53:41 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Creating new details
+2025-08-20 12:53:41 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set first name
+2025-08-20 12:53:41 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set last name
+2025-08-20 12:53:41 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set address1
+2025-08-20 12:53:41 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set address2
+2025-08-20 12:53:41 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set cityName
+2025-08-20 12:53:41 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set PostCode
+2025-08-20 12:53:41 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Selecting country
+2025-08-20 12:53:42 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Selecting region
+2025-08-20 12:53:42 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Delivery Detail
+2025-08-20 12:53:43 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Delivery Method
+2025-08-20 12:53:43 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Delivery Method has been mentioned
+2025-08-20 12:53:44 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to payment
+2025-08-20 12:53:45 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Confirm Order
+2025-08-20 12:53:45 [main] INFO  tests.LoginTest - Driver got closed
+2026-07-19 22:46:07 [main] INFO  resources.Base - Driver successfully initiated
+2026-07-19 22:46:09 [main] INFO  tests.LoginTest - Starting Test LoginTest
+2026-07-19 22:46:10 [main] INFO  pageobjects.LandingPage - click on the account option
+2026-07-19 22:46:10 [main] INFO  pageobjects.LandingPage - click on the login option
+2026-07-19 22:46:10 [main] INFO  tests.LoginTest - Successfully navigated to login page
+2026-07-19 22:46:10 [main] INFO  pageobjects.LoginPage - Entering email:selenium@gmail.com
+2026-07-19 22:46:10 [main] INFO  pageobjects.LoginPage - Entering password
+2026-07-19 22:46:11 [main] INFO  pageobjects.AccountPage - Verifying the Login status
+2026-07-19 22:46:11 [main] INFO  tests.LoginTest - Successfully logged in
+2026-07-19 22:46:11 [main] INFO  tests.SearchTest - Starting the product search Test
+2026-07-19 22:46:11 [main] INFO  pageobjects.AccountPage - Hover over the desktop option
+2026-07-19 22:46:11 [main] INFO  pageobjects.AccountPage - Hover over the mac option
+2026-07-19 22:46:12 [main] INFO  pageobjects.ProductPage - Getting the element locator
+2026-07-19 22:46:12 [main] INFO  pageobjects.ProductPage - xPath Generated, Searching using the xPath
+2026-07-19 22:46:12 [main] INFO  pageobjects.ProductPage - Successfully navigate to the productMac
+2026-07-19 22:46:12 [main] INFO  pageobjects.ProductPage - Setting the quantity of product in product page
+2026-07-19 22:46:12 [main] INFO  pageobjects.ProductPage - Adding the product to cart
+2026-07-19 22:46:13 [main] INFO  pageobjects.ProductPage - Checking all the product in total Cart
+2026-07-19 22:46:13 [main] INFO  pageobjects.ProductPage - Reviewing Products in View Cart
+2026-07-19 22:46:13 [main] INFO  tests.CartTest - Starting the product cart Test
+2026-07-19 22:46:13 [main] INFO  tests.CartTest - In Cart Page
+2026-07-19 22:46:13 [main] INFO  pageobjects.CartPage - Setting up the quantity in cart page
+2026-07-19 22:46:13 [main] INFO  pageobjects.CartPage - Quantity has set for the product
+2026-07-19 22:46:13 [main] INFO  pageobjects.CartPage - Update the quantity on cart  page
+2026-07-19 22:46:14 [main] INFO  pageobjects.CartPage - Proceed to checkout
+2026-07-19 22:46:14 [TestNG-PoolService-1] INFO  tests.CheckoutTest - Starting the checkout Test
+2026-07-19 22:46:15 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Creating new details
+2026-07-19 22:46:15 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set first name
+2026-07-19 22:46:15 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set last name
+2026-07-19 22:46:15 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set address1
+2026-07-19 22:46:15 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set address2
+2026-07-19 22:46:15 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set cityName
+2026-07-19 22:46:15 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Set PostCode
+2026-07-19 22:46:15 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Selecting country
+2026-07-19 22:46:16 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Selecting region
+2026-07-19 22:46:16 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Delivery Detail
+2026-07-19 22:46:17 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Delivery Method
+2026-07-19 22:46:18 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Delivery Method has been mentioned
+2026-07-19 22:46:18 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to payment
+2026-07-19 22:46:19 [TestNG-PoolService-1] INFO  pageobjects.CheckoutPage - Continue to Confirm Order
+2026-07-19 22:46:19 [main] INFO  tests.LoginTest - Driver got closed

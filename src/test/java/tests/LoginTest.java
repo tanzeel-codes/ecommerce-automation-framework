@@ -35,7 +35,7 @@ public class LoginTest extends Base {
         // LOGIN PAGE
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(user, pass);
-
+        
         AccountPage accountPage = new AccountPage(driver);
         try {
             Assert.assertTrue(accountPage.editAccountOption());

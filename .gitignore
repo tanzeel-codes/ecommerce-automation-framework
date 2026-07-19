@@ -1,0 +1,23 @@
+# Ignore dependency folders
+node_modules/
+vendor/
+
+# Ignore environment variables / secrets
+.env
+.env.local
+.idea/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+.vscode
+
+# Ignore build outputs and logs
+dist/
+build/
+*.log
+logs
+screenshot
+reports
+testng.xml
+

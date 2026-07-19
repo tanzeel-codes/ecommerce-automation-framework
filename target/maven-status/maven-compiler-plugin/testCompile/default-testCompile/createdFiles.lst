@@ -1,3 +1,4 @@
-tests\LoginTest.class
 tests\SearchTest.class
-tests\VerificationTest.class
+tests\CartTest.class
+tests\CheckoutTest.class
+tests\LoginTest.class

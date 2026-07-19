@@ -1,7 +1,10 @@
+resources\DataProviders.class
+pageobjects\AccountPage.class
+pageobjects\LandingPage.class
+pageobjects\CartPage.class
 Listeners\Listeners.class
 pageobjects\ProductPage.class
-pageobjects\AccountPage.class
 pageobjects\LoginPage.class
 resources\Base.class
-pageobjects\LandingPage.class
-pageobjects\SearchPage.class
+utilities\ExtentReporter.class
+pageobjects\CheckoutPage.class

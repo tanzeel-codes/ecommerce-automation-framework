@@ -12,7 +12,6 @@ import java.io.IOException;
 public class SearchTest extends Base {
     private final static Logger logs = LogManager.getLogger(SearchTest.class);
 
-//    @Test(dataProvider = "userData", dataProviderClass = DataProviders.class)
     @Test
     public void search() throws IOException {
         logs.info("Starting the product search Test");
