@@ -20,4 +20,5 @@ logs
 screenshot
 reports
 testng.xml
+target/surefire-reports
 
